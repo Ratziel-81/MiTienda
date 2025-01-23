@@ -1,9 +1,15 @@
-﻿namespace AppTiendaV2
+﻿using System.Collections.Generic;
+using System;
+using System.IO;
+
+namespace AppTiendaV2
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             Tienda tienda = new Tienda();
             string rutaArchivo = "clientes.txt";
 
